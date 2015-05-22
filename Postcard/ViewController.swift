@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var labelMessage: UILabel!
+    
+    @IBOutlet weak var enterNameTextLabel: UITextField!
+    
+    
+    @IBOutlet weak var enterMessageTextLabel: UITextField!
+    
+    @IBOutlet weak var mailButtom: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +31,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func sendMailButtom(sender: UIButton) {
+        
+        labelMessage.hidden = false
+        labelMessage.text = enterMessageTextLabel.text
+        labelMessage.textColor = UIColor.redColor()
+        
+        enterMessageTextLabel.text = ""
+        enterMessageTextLabel.resignFirstResponder()
+        
+        mailButtom.setTitle("mail sent", forState: UIControlState.Normal)
+    }
 
 }
 
