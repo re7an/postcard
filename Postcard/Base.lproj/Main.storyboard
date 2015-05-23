@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JpG-zm-jHy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uQ5-fb-mxy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Technology+news.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-Wg-ruF">
@@ -83,7 +84,7 @@
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iT-bq-gNj">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="39" y="91" width="257" height="73"/>
@@ -101,6 +102,15 @@
                                     <action selector="sendMailButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I4m-CN-GI1"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogb-j5-vlo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="39" y="186" width="109" height="23"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -110,6 +120,7 @@
                                 <exclude reference="0Wn-XO-b1Q"/>
                                 <exclude reference="2iT-bq-gNj"/>
                                 <exclude reference="NmB-Kb-QU9"/>
+                                <exclude reference="Ogb-j5-vlo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -119,6 +130,7 @@
                                 <include reference="0Wn-XO-b1Q"/>
                                 <include reference="2iT-bq-gNj"/>
                                 <include reference="NmB-Kb-QU9"/>
+                                <include reference="Ogb-j5-vlo"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,6 +139,7 @@
                         <outlet property="enterNameTextLabel" destination="7LH-ok-YXq" id="2d9-WI-Kxt"/>
                         <outlet property="labelMessage" destination="2iT-bq-gNj" id="cMH-3B-KZO"/>
                         <outlet property="mailButtom" destination="NmB-Kb-QU9" id="AAh-Yz-XYV"/>
+                        <outlet property="nameLabel" destination="Ogb-j5-vlo" id="sNe-d2-bSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
